@@ -7,16 +7,16 @@
   --test2: #e0e0e0;
   --test3: #c0c0c0;
   --test4: #c0c0c0;
-  --test5: #d3d3e3;
+  --test5: #dcc5f3;
   --test6: #c7ffff;
-  --test7: #f5f5dc;
+  --test7: #8fcadd;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  font-family: "Fira Code", sans-serif;
   /* transition-duration: 2s; */
 }
 html {
@@ -88,9 +88,12 @@ p {
 header {
   display: flex;
   align-items: left;
-  justify-content: space-around;
+  justify-content: space-between;
   gap: 50px;
   padding-right: 200px;
+  border-bottom: 3px double var(--test7);
+  padding-bottom: 30px;
+  padding-top: 20px;
   
 }
 
@@ -106,6 +109,7 @@ nav a {
   font-family: "Fira Code", sans-serif;
   color: var(--test6);
   overflow: hidden;
+  font-size: 20px;
 }
 
 nav a:hover {
@@ -118,9 +122,9 @@ nav a:clicked {
 }
 
 .heading-container {
-    margin-top: 70px;
-    
-    
+    margin-top: 20px;
+    border: solid 10px var(--test7);
+    border-style: double;
     position: relative;
     z-index: 1;
     background-color: var(--test);
@@ -128,13 +132,26 @@ nav a:clicked {
     
 }
 
+.icon {
+  padding-right: 10px;
+  padding-left: 80px;
+  
+}
+
+.Paul {
+  font-family: "Fira Code", sans-serif;
+  font-size: 25px;
+}
+
+
+
 
 
 .nameContainer {
     gap: 8px;
     position: absolute;
-    margin-left: 50px;
-    padding-top: 100px;
+    margin-left: 10px;
+    padding-top: 70px;
     
     z-index: 3;
     width: 70%;
@@ -146,6 +163,7 @@ nav a:clicked {
   
   .nameContainer h1 {
     font-size: 60px;
+    font-family: "Fira Code", sans-serif;
   }
 
   .imgContainer {
@@ -163,22 +181,41 @@ nav a:clicked {
     width: 300px;
     aspect-ratio: 1/1;
     border-radius: 10px;
-    border-style: double;
-    border-color: #8432d6;
+    border-style: solid;
+    border-color: var(--test7);
     
 }
 
 .links {
-
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    padding-top: 40px;
-    text-decoration: none;
-    font-size: 20px;
-    left: -280px;
     
-    bottom: -400px;
+    
+    position: absolute;
+    
+    
+}
+.linkText {
+  font-family: "Fira Code", sans-serif;
+}
+
+.githubIcon {
+  position: absolute;
+  padding-top: 40px;
+  text-decoration: none;
+    font-size: 30px;
+    left: -150px;
+    text-wrap: nowrap;
+    bottom: -90px;
+    z-index: 3;
+}
+
+.linkIcon {
+  position: absolute;
+  padding-top: 40px;
+  text-decoration: none;
+    font-size: 30px;
+    left: 200px;
+    text-wrap: nowrap;
+    bottom: -90px;
     z-index: 3;
 }
 
@@ -187,13 +224,14 @@ nav a:clicked {
 .links a {
     text-decoration: none;
     
+    
 }
 .links a span {
-    color: var(--test1);
+  color: var(--test6);
 }
 
 .links a:visited {
-    color: var(--test1);
+  color: var(--test6);
     text-decoration: none;
 } 
 
@@ -203,13 +241,17 @@ nav a:clicked {
     opacity: 0.7;
 }
 
+.links span {
+  margin-left: 20px;
+}
+
 
 
 
 .aboutContainer {
   
-  
-  padding-top: 500px;
+  padding-top: 50px;
+  font-family: "Fira Code", sans-serif; 
 }
 
 .aboutContainer
@@ -217,27 +259,50 @@ nav a:clicked {
   padding-right: 10px;
 }
 
-.aboutContainer h1 {
-    font-size: 2rem;
+.aboutContainer h2 {
+    font-size: 2.6rem;
+    padding-bottom: 5px;
+    
 }
 
-.aboutContainerDiv {
-    display: flex;
-    align-items: center;
-}
+
 
 .aboutContainerDiv p {
+    padding-top: 10px;
     margin-right: 1rem;
     text-align: justify;
     font-size: 1.5rem;
+    border-top: solid 5px var(--test7);
 }
 
-.aboutContainerDiv img {
-    border-radius: 100%;
-    width: 100%;
-  aspect-ratio: 1/1;
-  object-fit: cover;
+.aboutContainer h3 {
+  font-size: 2.6rem;
+  padding-top: 50px;
 }
+
+.stack ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  list-style-type: square;
+  padding-left: 33px;
+  padding-top: 20px;
+  margin-right: 1rem;
+  font-size: 30px;
+  border-top: solid 5px var(--test7);
+  
+}
+
+.stack ul li {
+  box-sizing: border-box;
+   
+  
+  
+}
+
+
+
+
 
 
 
@@ -258,7 +323,7 @@ main {
 
 .secTitle {
     font-family: "Fira Code", sans-serif;
-    font-size: 1.8em;
+    
     
 }
 
@@ -276,51 +341,14 @@ section {
 
 
 
-.stats {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-}
 
-.stats > div {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
 
-.stats div i {
-  font-size: 1.4em;
-}
 
-.stats div div {
-  display: grid;
-  place-items: center;
-  min-width: 40px;
-}
 
-.aboutMe {
-  line-height: 1.5em;
-}
 
-.outreach {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  cursor: pointer;
-  width: fit-content;
-  margin-right: auto;
-}
-
-.outreach:hover {
-  opacity: 0.7;
-}
-
-.outreach i {
-  transform: rotate(-45deg);
-}
 
 .projectContainer {
+  margin-top: 200px;
   display: flex;
   flex-direction: column;
   gap: 48px;
@@ -328,6 +356,12 @@ section {
 
 .headerText {
   margin-bottom: 24px;
+  
+}
+
+.projectText {
+  font-weight: bold;
+  font-size: 2.6rem;
 }
 
 .projectItem {
