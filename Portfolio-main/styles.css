@@ -32,7 +32,7 @@ html {
   align-items: center;
   justify-content: center;
   background: var(--bg-color);
-
+  z-index: 4;
   transition: opacity 0.75s, visibility 0.75s;
   transition-delay: 2s;
 }
@@ -386,8 +386,10 @@ section {
 
 .projectItem > div:last-child img {
   width: 100%;
-  height: 100%;
+  height: 200px;
   object-fit: cover;
+  border-radius: 8px;
+  
 }
 
 .linkContainer {
@@ -414,20 +416,52 @@ section {
   font-size: 0.9em;
 }
 
-@media (min-width: 640px) {
-  .statsContainer {
-    flex-direction: row;
-  }
-
-  .stats {
-    gap: 0px;
-  }
-
-  .aboutMe {
-    width: 80%;
-    margin-right: auto;
-  }
+.techStack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }
+
+.techStack span {
+  padding: 8px 16px;
+  background-color: var(--test7);
+  color: var(--bg-color);
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.back{
+  text-decoration: none;
+  
+}
+.back:hover {
+  opacity: 0.7;
+}
+.back:visited {
+  color: var(--test6);
+  text-decoration: none;
+}
+
+.contact {
+  padding-top: 150px;
+  font-size: 2rem;
+  border-bottom: solid 5px var(--test7);;
+}
+
+.contactMe {
+  margin-left: 20px;
+  font-size: 1.6rem;
+}
+
+
+.contactlinks{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+
+
 
 @media (max-width: 480px) {
   nav {
