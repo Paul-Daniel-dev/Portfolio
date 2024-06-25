@@ -433,7 +433,7 @@ section {
 
 .back{
   text-decoration: none;
-  
+  color: var(--test6);
 }
 .back:hover {
   opacity: 0.7;
