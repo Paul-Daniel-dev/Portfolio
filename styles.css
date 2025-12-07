@@ -168,7 +168,8 @@ nav a:clicked {
 
 .imgContainer img {
   width: 300px;
-  aspect-ratio: 1.5/1.5;
+  height: 300px;
+  object-fit: fill;
   border-radius: 10px;
   border-style: solid;
   border-color: var(--test7);
