@@ -63,21 +63,23 @@ html {
 }
 
 body {
-  background: var(--bg-color);
+  background-image: url('public/Bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #5d3fd3;
   color: var(--test6);
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  gap: 72px;
-  padding: 14px;
-  overflow: auto;
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory;
 }
 
 main,
 footer {
-  max-width: 1000px;
-  margin: 0 auto;
-  width: 100%;
+  width: 100vw;
+  max-width: none;
+  margin: 0;
+  padding: 0;
 }
 
 p {
@@ -91,7 +93,6 @@ header {
   gap: 50px;
   padding-right: 200px;
   border-bottom: 3px double var(--test7);
-  padding-bottom: 30px;
   padding-top: 20px;
 }
 
@@ -120,12 +121,10 @@ nav a:clicked {
 }
 
 .heading-container {
-  margin-top: 20px;
-  border: solid 10px var(--test7);
-  border-style: double;
+  background-image: url('public/Bg.jpg');
   position: relative;
   z-index: 1;
-  background-color: var(--test);
+  
   height: 700px;
 }
 
@@ -227,6 +226,7 @@ nav a:clicked {
 .aboutContainer {
   padding-top: 50px;
   font-family: "Fira Code", sans-serif;
+  background-image: url('public/pic1.jpg');
 }
 
 .aboutContainer .icon {
@@ -293,7 +293,13 @@ main {
 }
 
 section {
-  gap: 48px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  scroll-snap-align: start;
 }
 
 .projectContainer {
@@ -301,6 +307,7 @@ section {
   display: flex;
   flex-direction: column;
   gap: 48px;
+  background-image: url('public/pic2.jpg');
 }
 
 .headerText {
@@ -404,6 +411,10 @@ section {
 .contactlinks {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.contactInfo {
+  background-image: url('public/pic3.jpg');
 }
 
 @media (max-width: 480px) {
