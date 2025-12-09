@@ -1,7 +1,7 @@
 :root {
   --primary-color: white;
   --secondary-color: white;
-  --bg-color: #5d3fd3;
+  --bg-color: #f000;
   --test: #7a29cc;
   --test1: #f0e6fa;
   --test2: #e0e0e0;
@@ -16,127 +16,72 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Fira Code", sans-serif;
+  font-family: "Times New Roman", serif;
 }
 html {
   scroll-behavior: smooth;
 }
-.loader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--bg-color);
-  z-index: 4;
-  transition: opacity 0.75s, visibility 0.75s;
-  transition-delay: 2s;
-}
 
-.loader--hidden {
-  opacity: 0;
-  visibility: hidden;
-}
-.loader::after {
-  content: "";
-  width: 50px;
-  height: 50px;
-  border: 15px solid var(--primary-color);
-  background: var(--bg-color);
-  border-top-color: #5d3fd3;
-  border-radius: 50%;
-  animation: loading;
-  animation-duration: 3s;
-  animation-iteration-count: 10;
-}
-
-@keyframes loading {
-  from {
-    transform: rotate(0turn);
-  }
-  to {
-    transform: rotate(1turn);
-  }
-}
 
 body {
-  background: var(--bg-color);
-  color: var(--test6);
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  gap: 72px;
-  padding: 14px;
-  overflow: auto;
+  background-color: #fff;
+  width: 100vw;
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory;
+  color: #fff;
 }
 
 main,
 footer {
-  max-width: 1000px;
-  margin: 0 auto;
-  width: 100%;
-}
-
-p {
-  font-size: 1.05em;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
 }
 
 header {
   display: flex;
   align-items: left;
   justify-content: space-between;
-  gap: 50px;
   padding-right: 200px;
-  border-bottom: 3px double var(--test7);
-  padding-bottom: 30px;
   padding-top: 20px;
 }
 
-nav {
+.heading-container {
+  background-image: url('public/Bg.jpg');
+  background-size: 100vw 100vh;    
+  background-repeat: no-repeat; 
+  background-position: center;   
+  background-color: #fff;        
+  position: relative;
+  min-height: 100vh;
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
   display: flex;
   align-items: center;
-  gap: 32px;
+  justify-content: center;
+  overflow-x: hidden;
+  padding: 0 1rem;
 }
 
-nav a {
-  cursor: pointer;
-  text-decoration: none;
-  font-family: "Fira Code", sans-serif;
-  color: var(--test6);
-  overflow: hidden;
-  font-size: 20px;
-}
-
-nav a:hover {
-  opacity: 0.7;
-}
-
-nav a:clicked {
-  color: var(--primary-color);
-  text-decoration: none;
-}
-
-.heading-container {
-  margin-top: 20px;
-  border: solid 10px var(--test7);
-  border-style: double;
-  position: relative;
+.heading-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: 
+    url('public/Bg.jpg');
+  background-size: cover;  
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  filter: blur(1px); 
   z-index: 1;
-  background-color: var(--test);
-  height: 700px;
 }
 
-.icon {
-  padding-right: 10px;
-  padding-left: 80px;
-}
-
-.Paul {
-  font-family: "Fira Code", sans-serif;
-  font-size: 25px;
+.heading-container > * {
+  position: relative;
+  z-index: 2;
 }
 
 .nameContainer {
@@ -144,7 +89,6 @@ nav a:clicked {
   position: absolute;
   margin-left: 10px;
   padding-top: 70px;
-
   z-index: 3;
   width: 70%;
   left: 250px;
@@ -153,26 +97,8 @@ nav a:clicked {
   right: 100px;
 }
 
-.nameContainer h1 {
-  font-size: 60px;
-  font-family: "Fira Code", sans-serif;
-}
-
-.imgContainer {
-  padding-top: 50px;
-  position: absolute;
-  left: -100px;
-  top: 50px;
-  z-index: 2;
-}
-
-.imgContainer img {
-  width: 300px;
-  height: 400px;
-  object-fit: fill;
-  border-radius: 10px;
-  border-style: solid;
-  border-color: var(--test7);
+.name {
+  font-size: 2.6em;
 }
 
 .links {
@@ -226,7 +152,7 @@ nav a:clicked {
 
 .aboutContainer {
   padding-top: 50px;
-  font-family: "Fira Code", sans-serif;
+  background-image: url('public/pic1.jpg');
 }
 
 .aboutContainer .icon {
@@ -247,7 +173,7 @@ nav a:clicked {
 }
 
 .aboutContainer h3 {
-  font-size: 2.6rem;
+  font-size: 2.6em;
   padding-top: 50px;
 }
 
@@ -277,23 +203,28 @@ main {
   padding-bottom: 64px;
 }
 .initial {
-  font-family: "Fira Code", sans-serif;
-  font-size: 1.8em;
-  margin-bottom: 20px;
+  font-family: "Times New Roman", serif;
+  font-size: 3em;
+  margin-bottom: 40px;
+  font-weight: 550;
+}
+
+.welcome-italic {
+  font-style: italic;
 }
 
 .secTitle {
   font-family: "Fira Code", sans-serif;
 }
 
-.text-under {
-  font-family: "Fira Code", sans-serif;
-  font-size: 1.6rem;
-  margin-top: 20px;
-}
-
 section {
-  gap: 48px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  scroll-snap-align: start;
 }
 
 .projectContainer {
@@ -301,6 +232,7 @@ section {
   display: flex;
   flex-direction: column;
   gap: 48px;
+  background-image: url('public/pic2.jpg');
 }
 
 .headerText {
@@ -309,7 +241,6 @@ section {
 
 .projectText {
   font-weight: bold;
-  font-size: 2.6rem;
 }
 
 .projectItem {
@@ -404,6 +335,10 @@ section {
 .contactlinks {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.contactInfo {
+  background-image: url('public/pic3.jpg');
 }
 
 @media (max-width: 480px) {
