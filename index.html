@@ -25,62 +25,14 @@
     />
 
     <link rel="stylesheet" href="styles.css" />
-
-    <script>
-      window.addEventListener("load", () => {
-        const loader = document.querySelector(".loader");
-
-        loader.classList.add("loader--hidden");
-
-        loader.addEventListener("transitionend", () => {
-          document.body.removeChild(loader);
-        });
-      });
-    </script>
   </head>
 
   <body>
-    <div class="loader"></div>
-    <header>
-      <h2 id="heading" class="Paul">
-        <i class="fa-solid fa-computer-mouse icon"></i>Paul.dev
-      </h2>
-      <nav>
-        <a href="#about">[01] About</a>
-        <a href="#project">[02] Projects</a>
-        <a href="#contactInfo">[03] Contact Me</a>
-      </nav>
-    </header>
     <main>
       <section class="heading-container">
         <div class="nameContainer">
-          <p class="initial">Hello, my name is</p>
-          <h1 class="name">Paul-Daniël Pretorius,</h1>
-          <h1 class="secTitle">I build web applications.</h1>
-          <p class="text-under">
-            I'm a passionate full-stack web developer based in Cape Town,
-            South-Africa. <i class="fa-solid fa-location-dot"></i>
-          </p>
-
-          <div class="links">
-            <a
-              href="https://github.com/Paul-Daniel-dev"
-              target="”_blank”"
-              class="githubIcon"
-            >
-              <i class="fa-brands fa-github"></i>
-              <span class="linkText">My Github</span>
-            </a>
-
-            <a
-              href="https://www.linkedin.com/in/pauldanielpretorius/"
-              target="_blank"
-              class="linkIcon"
-            >
-              <i class="fa-brands fa-linkedin"></i>
-              <span class="linkText">My Linkedin</span>
-            </a>
-          </div>
+          <p class="initial">Hello!</p>
+          <p class="name"><span class="welcome-italic">Welcome</span> to my portfolio. My name is Paul-Daniël. I am a dedicated and self-taught web developer with a cumulative professional workplace experience of 2 years.</p>
         </div>
       </section>
       <section class="aboutContainer" id="about">
