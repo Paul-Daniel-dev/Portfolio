@@ -204,13 +204,24 @@ main {
 }
 .initial {
   font-family: "Times New Roman", serif;
-  font-size: 3em;
+  font-size: 7em;
   margin-bottom: 40px;
+  padding-top: 170px;
+  padding-left: 50px;
   font-weight: 550;
 }
 
 .welcome-italic {
   font-style: italic;
+  transition: 
+    font-style 0.3s,
+    color 0.3s;
+  cursor: pointer;
+}
+
+.welcome-italic:hover {
+  font-style: normal;
+  color: #6ec6ff; 
 }
 
 .secTitle {
