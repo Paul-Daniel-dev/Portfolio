@@ -16,7 +16,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Times New Roman", serif;
+  font-family: "Jersey 15", sans-serif;
 }
 html {
   scroll-behavior: smooth;
@@ -38,17 +38,61 @@ footer {
   padding: 0;
 }
 
+
 header {
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
   display: flex;
-  align-items: left;
   justify-content: space-between;
-  padding-right: 200px;
-  padding-top: 20px;
+  align-items: center;
+  width: 100vw;
+  padding: 32px 64px 0 64px;
+  background: transparent;
+}
+
+.brand {
+  font-size: 2rem;
+  color: #fff;
+  letter-spacing: 2px;
+  padding-left: 40px !important;
+}
+
+.nav-links {
+  display: flex;
+  gap: 120px;
+  list-style: none;
+  padding-right: 70px !important;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+  transition: opacity 0.2s;
+}
+
+.nav-links li a:hover {
+  opacity: 0.7;
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .heading-container {
-  background-image: url('public/Bg.jpg');
-  background-size: 100vw 100vh;    
+  background-image: url('public/avc.jpg');
+  background-size: cover;    
   background-repeat: no-repeat; 
   background-position: center;   
   background-color: #fff;        
@@ -62,20 +106,21 @@ header {
   justify-content: center;
   overflow-x: hidden;
   padding: 0 1rem;
+  color: #fff !important;
 }
 
 .heading-container::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: 
-    url('public/Bg.jpg');
-  background-size: cover;  
+  background-image:
+    linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+    url('public/avc.jpg');
+  background-size: cover;     
   background-repeat: no-repeat;
   background-position: center;
   width: 100vw;
   height: 100vh;
-  filter: blur(1px); 
   z-index: 1;
 }
 
@@ -87,8 +132,8 @@ header {
 .nameContainer {
   gap: 8px;
   position: absolute;
-  margin-left: 10px;
-  padding-top: 70px;
+  padding-left: 80px;
+  padding-top: 80px;
   z-index: 3;
   width: 70%;
   left: 250px;
@@ -98,7 +143,8 @@ header {
 }
 
 .name {
-  font-size: 2.6em;
+  font-size: 48px;
+  font-weight: normal !important;
 }
 
 .links {
@@ -106,6 +152,15 @@ header {
 }
 .linkText {
   font-family: "Fira Code", sans-serif;
+}
+
+.location {
+  color: #fff;
+  font-size: 38px;
+  margin-top: 36px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .githubIcon {
@@ -203,12 +258,13 @@ main {
   padding-bottom: 64px;
 }
 .initial {
-  font-family: "Times New Roman", serif;
   font-size: 7em;
-  margin-bottom: 40px;
+  font-weight: normal !important;
   padding-top: 170px;
-  padding-left: 50px;
-  font-weight: 550;
+}
+
+.letter {
+  font-size: 10em !important;
 }
 
 .welcome-italic {
@@ -249,11 +305,6 @@ section {
 .headerText {
   margin-bottom: 24px;
 }
-
-.projectText {
-  font-weight: bold;
-}
-
 .projectItem {
   display: flex;
   align-items: stretch;
@@ -317,7 +368,6 @@ section {
   color: var(--bg-color);
   border-radius: 4px;
   font-size: 14px;
-  font-weight: bold;
 }
 
 .back {
