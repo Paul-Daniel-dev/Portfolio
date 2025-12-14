@@ -24,18 +24,35 @@ html {
 
 
 body {
+<<<<<<< HEAD
   background-color: #fff;
   width: 100vw;
   overflow-x: hidden;
   scroll-snap-type: y mandatory;
   color: #fff;
+=======
+  background: var(--bg-color);
+  color: var(--test6);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+  padding: 14px;
+  overflow: auto;
+>>>>>>> parent of 196de94 (Changes)
 }
 
 main,
 footer {
+<<<<<<< HEAD
   width: 100vw;
   margin: 0;
   padding: 0;
+=======
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+>>>>>>> parent of 196de94 (Changes)
 }
 
 header {
@@ -43,15 +60,26 @@ header {
   align-items: left;
   justify-content: space-between;
   padding-right: 200px;
+<<<<<<< HEAD
+=======
+  border-bottom: 3px double var(--test7);
+  padding-bottom: 30px;
+>>>>>>> parent of 196de94 (Changes)
   padding-top: 20px;
 }
 
 .heading-container {
+<<<<<<< HEAD
   background-image: url('public/Bg.jpg');
   background-size: 100vw 100vh;    
   background-repeat: no-repeat; 
   background-position: center;   
   background-color: #fff;        
+=======
+  margin-top: 20px;
+  border: solid 10px var(--test7);
+  border-style: double;
+>>>>>>> parent of 196de94 (Changes)
   position: relative;
   min-height: 100vh;
   height: 100vh;
@@ -77,6 +105,11 @@ header {
   height: 100vh;
   filter: blur(1px); 
   z-index: 1;
+<<<<<<< HEAD
+=======
+  background-color: var(--test);
+  height: 700px;
+>>>>>>> parent of 196de94 (Changes)
 }
 
 .heading-container > * {
@@ -152,7 +185,11 @@ header {
 
 .aboutContainer {
   padding-top: 50px;
+<<<<<<< HEAD
   background-image: url('public/pic1.jpg');
+=======
+  font-family: "Fira Code", sans-serif;
+>>>>>>> parent of 196de94 (Changes)
 }
 
 .aboutContainer .icon {
@@ -218,13 +255,7 @@ main {
 }
 
 section {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  scroll-snap-align: start;
+  gap: 48px;
 }
 
 .projectContainer {
@@ -232,7 +263,6 @@ section {
   display: flex;
   flex-direction: column;
   gap: 48px;
-  background-image: url('public/pic2.jpg');
 }
 
 .headerText {
@@ -335,10 +365,6 @@ section {
 .contactlinks {
   padding-top: 30px;
   padding-bottom: 30px;
-}
-
-.contactInfo {
-  background-image: url('public/pic3.jpg');
 }
 
 @media (max-width: 480px) {
