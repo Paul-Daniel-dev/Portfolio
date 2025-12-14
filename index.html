@@ -14,12 +14,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+
 
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -29,65 +24,62 @@
     <nav class="navbar">
       <span class="brand">[PRETORIUS.DEV]</span>
       <ul class="nav-links">
-        <li><a href="#about">[HOME]</a></li>
-        <li><a href="#project">[DEMOS]</a></li>
-        <li><a href="#contactInfo">[CONTACT]</a></li>
+        <li><a href="#home">[HOME]</a></li>
+        <li><a href="#project">[PROJECTS]</a></li>
+        <li><a href="#about">[ABOUT ME]</a></li>
+        <li><a href="#contactInfo">[ROADMAP]</a></li>
       </ul>
     </nav>
   </header>
     <main>
-      <section class="heading-container">
+      <section class="heading-container" id="home">
         <div class="nameContainer">
-          <p class="initial">Hello!</p>
+          <p class="initial"><span class="big-h">H</span><span class="letter">ello!</span></p>
           <p class="name">I am Paul-Daniel Pretorius, a self-taught software developer with 2 years of professional experience.</p>
-          <p class="location">
-          <i class="fa-solid fa-location-dot"></i> Cape Town, Western Cape, ZA
-          </p>
-        </div>
-      </section>
-      <section class="aboutContainer" id="about">
-        <h2>About</h2>
-        <div class="aboutContainerDiv">
-          <p>
-            I'm a passionate and highly technical web developer with a strong
-            drive for creating seamless, user-friendly web experiences.
-            Proficient in HTML, CSS, JavaScript, and cutting-edge frameworks
-            like React, Node, I excel at developing responsive and
-            high-performance web applications. My relentless work ethic and
-            enthusiasm for coding fuel my ability to solve complex problems and
-            deliver exceptional results. Eager to embrace new challenges and
-            continuously improve my skills, I am committed to contributing to
-            forward-thinking projects and driving technological innovation.
-          </p>
-        </div>
-        <div class="stack">
-          <h3>Tech Stack</h3>
-          <div>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>React</li>
-              <li>Node</li>
-              <li>TanStack</li>
-              <li>Express</li>
-              <li>PostgreSQL</li>
-              <li>Stripe</li>
-              <li>MongoDB</li>
-              <li>Tailwind CSS</li>
-              <li>C#</li> 
-              <li>ASP.NET</li> 
-              <li>RESTful API's</li>
-              <li>MVC</li>
-            </ul>
+          <div class="first-row">
+            <div class="info-item">
+              <span class="icon"><img src="public/location symbol.png" alt="Location" /></span>
+              <span class="info-text">Cape Town, Western Cape, ZA</span>
+            </div>
+            <div class="info-item email-item">
+              <span class="icon"><img src="public/commm.png" alt="email" class="commercial-icon"/></span>
+              <span class="info-text">pretoriuspauld@gmail.com</span>
+            </div>
           </div>
+          <div class="second-row">
+            <div class="info-item">
+              <span class="icon"><img src="public/LinkedIn symbol.png" alt="LinkedIn" class="linkedin"/></span>
+              <span class="info-text">
+                <a href="https://www.linkedin.com/in/pauldanielpretorius/" target="_blank" style="color: inherit; text-decoration: none;">
+                  www.linkedin.com/in/pauldanielpretorius/
+                </a>
+              </span>
+            </div>
+            <div class="info-item email-item">
+              <span class="icon"><img src="public/Github.png" alt="email" class="commercial-icon"/></span>
+              <span class="info-text">
+                <a href="https://github.com/Paul-Daniel-dev" target="_blank" style="color: inherit; text-decoration: none;">
+                  www.github.com/Paul-Daniel-dev
+                </a>
+              </span>
+              
+            </div>
+          </div>
+        </div>
+        <div class="view-projects">
+        <a href="#project" class="view-projects-link" id="view-projects-link">
+          <span>View my projects</span>
+          <img src="public/pointer.png" alt="Pointer" class="pointer-img" />
+        </a>
+      </div>
         </div>
       </section>
       <section class="projectContainer" id="project">
-        <p class="projectText">Latest Projects</p>
-        <p>Here I showcase some of the projects I've built. Each project has two links. One for the respective Github repository and one for you to try out the demo yourself.</p>
-        <div class="projectItem">
-          <div>
+        <div class="projectclass">
+          <p class="projectText"><span class="small-h">H</span>ere I display my professional and potentialities with the following projects.</p>
+          <p>The images are interactive.</p>
+          <div class="projectItem">
+            <div>
             <p>
               A web app recipe library providing YouTube links to recipes users
               search for.
@@ -212,6 +204,46 @@
           </div>
         </div>
       </section>
+      <section class="aboutContainer" id="about">
+        <h2>About</h2>
+        <div class="aboutContainerDiv">
+          <p>
+            I'm a passionate and highly technical web developer with a strong
+            drive for creating seamless, user-friendly web experiences.
+            Proficient in HTML, CSS, JavaScript, and cutting-edge frameworks
+            like React, Node, I excel at developing responsive and
+            high-performance web applications. My relentless work ethic and
+            enthusiasm for coding fuel my ability to solve complex problems and
+            deliver exceptional results. Eager to embrace new challenges and
+            continuously improve my skills, I am committed to contributing to
+            forward-thinking projects and driving technological innovation.
+          </p>
+        </div>
+        <div class="stack">
+          <h3>Tech Stack</h3>
+          <div>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Node</li>
+              <li>TanStack</li>
+              <li>Express</li>
+              <li>PostgreSQL</li>
+              <li>Stripe</li>
+              <li>MongoDB</li>
+              <li>Tailwind CSS</li>
+              <li>C#</li> 
+              <li>ASP.NET</li> 
+              <li>RESTful API's</li>
+              <li>MVC</li>
+            </ul>
+          </div>
+        </div>
+        </div>
+      </section>
+      
       <section class="contactInfo" id="contactInfo">
         <p class="contact">Contact Me</p>
         <div class="contactlinks">
@@ -221,5 +253,29 @@
         <a href="#heading" class="back">Back to top</a>
       </section>
     </main>
+
+    <script>
+document.getElementById('view-projects-link').addEventListener('click', function(e) {
+  e.preventDefault();
+  const target = document.getElementById('project');
+  if (!target) return;
+
+  const duration = 50;
+  const start = window.scrollY;
+  const end = target.getBoundingClientRect().top + window.scrollY;
+  const startTime = performance.now();
+
+  function scrollStep(currentTime) {
+    const elapsed = currentTime - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+    window.scrollTo(0, start + (end - start) * progress);
+    if (progress < 1) {
+      requestAnimationFrame(scrollStep);
+    }
+  }
+  requestAnimationFrame(scrollStep);
+});
+</script>
+
   </body>
 </html>
