@@ -351,17 +351,12 @@ section {
 
 .projectContainer {
   display: flex;
-  flex-direction: column; 
   align-items: flex-start;
-  gap: 10px;
   background-image: url('public/dsk2.png');
   width: 100vw;   
   height: 100vh;      
-  box-sizing: border-box;
-  padding-bottom: 10px !important;
-  padding-top: 10px !important;
-  margin-top: 10px !important;
-  margin-bottom: 10px !important;
+  padding-right: 190px !important;
+  padding-top: 100px !important;
 }
 
 .projectclass {
@@ -369,8 +364,8 @@ section {
 }
 
 .projectText {
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.7), 0 1px 0 #000;
-  font-size: 4em !important;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.9), 0 1px 0 #000;
+  font-size: 3em !important;
 }
 
 .small-h {
@@ -380,47 +375,87 @@ section {
 .headerText {
   margin-bottom: 24px;
 }
+
+.projectinfo {
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.9), 0 1px 0 #000;
+  font-size: 1.8em !important;
+  padding-bottom: 25px;
+}
+
+
+.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
 .projectItem {
   display: flex;
-  align-items: stretch;
-  gap: 24px;
+  flex-direction: row; /* row instead of column */
+  align-items: stretch; /* stretch children to equal height */
+  min-width: 0;
+  height: 220px; /* or your preferred height */
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
 }
 
-.projectItem div:first-child {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  flex: 1;
-}
-
-.projectItem > div:last-child {
-  aspect-ratio: 16/9;
-  max-width: 30%;
-  overflow: hidden;
-  border-radius: 8px;
-}
-
-.projectItem > div:last-child img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-.linkContainer {
+.proj-img {
+  width: 260px; 
+  height: 100%; 
   display: flex;
   align-items: center;
-  gap: 24px;
+  justify-content: center;
+  background: #f7f7f7;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 0; 
+  color: #000;
+}
+
+.proj-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  object-position: center;
+  display: block;
+}
+
+.projectItem > div:not(.proj-img) {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 2rem;
+  color: #000;
+}
+
+.projname {
+  font-size: 1.7em !important;
+}
+
+.linkContainer img {
+  width: 28px;      
+  height: 28px;
+  object-fit: contain;
+  display: block;
 }
 
 .linkItem {
   display: flex;
-  flex-direction: row !important;
   align-items: center;
-  gap: 14px !important;
-  color: var(--primary-color);
+  gap: 8px;
   text-decoration: none;
-  cursor: pointer;
+  color: inherit;
+}
+
+.linkContainer {
+  margin-top: auto;
+  display: flex;
+  gap: 1rem;
 }
 
 .linkItem:hover {
@@ -428,7 +463,7 @@ section {
 }
 
 .linkItem p {
-  font-size: 0.9em;
+  font-size: 1.2em;
 }
 
 .techStack {
