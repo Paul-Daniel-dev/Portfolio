@@ -26,8 +26,13 @@
       <ul class="nav-links">
         <li><a href="#home">[HOME]</a></li>
         <li><a href="#project">[PROJECTS]</a></li>
-        <li><a href="#about">[ABOUT ME]</a></li>
-        <li><a href="#contactInfo">[ROADMAP]</a></li>
+        <li><a href="#about">[ROADMAP]</a></li>
+        <li>
+          <a href="public/Paul-Daniel-CV.pdf" class="cv-nav-link" id="cv-download-link">
+            <span>DOWNLOAD CV</span>
+            <img src="public/pointer.png" alt="Download" class="download-icon" />
+          </a>
+        </li>
       </ul>
     </nav>
   </header>
@@ -82,14 +87,22 @@
             <div class="projectItem">
               <div class="proj-img">
                 <img src="public/LetsCook.png" alt="LetsGetCooking-img" />
+                <div class="proj-img-tech">
+                  <h4>Tech Stack</h4>
+                  <ul>
+                    <li>JavaScript</li>
+                    <li>React.js</li>
+                    <li>Tailwind</li>
+                  </ul>
+                </div>
               </div>
-              <div>
+              <div class="projinfo">
                 <p class="projname">
                   A web app recipe library providing YouTube links to recipes users search for.
                 </p>
                 <div class="linkContainer">
                   <a href="https://github.com/Paul-Daniel-dev/GetRecipes" target="_blank" class="linkItem">
-                    <img src="public/Github.png" alt="github icon" />
+                    <img src="public/DGithub.png" alt="github icon" />
                     <p>GitHub</p>
                   </a>
                   <a href="https://lets-get-cooking.vercel.app/" target="_blank" class="linkItem">
@@ -97,25 +110,30 @@
                     <p>Try the demo</p>
                   </a>
                 </div>
-                <!-- <div class="techStack">
-                  <span>JavaScript</span>
-                  <span>Tailwind</span>
-                  <span>React</span>
-                </div> -->
               </div>
             </div>
             <div class="projectItem">
               <div class="proj-img">
                 <img src="public/Mock.png" alt="AIMockInterviewer-img" />
+                <div class="proj-img-tech">
+                  <h4>Tech Stack</h4>
+                  <ul>
+                    <li>JavaScript</li>
+                    <li>React.js</li>
+                    <li>Tailwind</li>
+                    <li>Next.js</li>
+                    <li>PostgreSQL</li>
+                  </ul>
+                </div>
               </div>
-              <div>
+              <div class="projinfo">
                 <p class="projname">
                   An AI-powered software development mock inteviewer, with personalized feedback.
                 </p>
-                <p>NOTE : For full functionality, please use Google Chrome.</p>
+                <p class="mock-note">NOTE : For full functionality, please use Google Chrome.</p>
                 <div class="linkContainer">
                   <a href="https://github.com/Paul-Daniel-dev/AIMockInterviewer" target="_blank" class="linkItem">
-                    <img src="public/Github.png" alt="github icon" />
+                    <img src="public/DGithub.png" alt="github icon" />
                     <p>GitHub</p>
                   </a>
                   <a href="https://ai-mock-interviewer-f445.vercel.app/" target="_blank" class="linkItem">
@@ -123,22 +141,27 @@
                     <p>Try the demo</p>
                   </a>
                 </div>
-                <!-- <div class="techStack">
-                  <span>JavaScript</span>
-                  <span>Tailwind</span>
-                  <span>React</span>
-                </div> -->
               </div>
             </div>
             <div class="projectItem">
               <div class="proj-img">
                 <img src="public/XClone.png" alt="XClone-img" />
+                <div class="proj-img-tech">
+                  <h4>Tech Stack</h4>
+                  <ul>
+                    <li>JavaScript</li>
+                    <li>React.js</li>
+                    <li>Node.js</li>
+                    <li>Express</li>
+                    <li>MongoDB</li>
+                  </ul>
+                </div>
               </div>
-              <div>
+              <div class="projinfo">
                 <p class="projname">X (formerly Twitter) clone</p>
                 <div class="linkContainer">
                   <a href="https://github.com/Paul-Daniel-dev/X-clone" target="_blank" class="linkItem">
-                    <img src="public/Github.png" alt="github icon" />
+                    <img src="public/DGithub.png" alt="github icon" />
                     <p>GitHub</p>
                   </a>
                   <a href="https://x-clone-recm.onrender.com" target="_blank" class="linkItem">
@@ -146,24 +169,28 @@
                     <p>Try the demo</p>
                   </a>
                 </div>
-                <!-- <div class="techStack">
-                  <span>JavaScript</span>
-                  <span>Tailwind</span>
-                  <span>React</span>
-                </div> -->
               </div>
             </div>
             <div class="projectItem">
               <div class="proj-img">
                 <img src="public/LetsCook.png" alt="LetsGetCooking-img" />
+                <div class="proj-img-tech">
+                  <h4>Tech Stack</h4>
+                  <ul>
+                    <li>C#</li>
+                    <li>Blazor</li>
+                    <li>MVC</li>
+                    <li>PostgreSQL</li>
+                  </ul>
+                </div>
               </div>
-              <div>
+              <div class="projinfo">
                 <p class="projname">
                   A web app recipe library providing YouTube links to recipes users search for.
                 </p>
                 <div class="linkContainer">
                   <a href="https://github.com/Paul-Daniel-dev/GetRecipes" target="_blank" class="linkItem">
-                    <img src="public/Github.png" alt="github icon" />
+                    <img src="public/DGithub.png" alt="github icon" />
                     <p>GitHub</p>
                   </a>
                   <a href="https://lets-get-cooking.vercel.app/" target="_blank" class="linkItem">
@@ -171,88 +198,132 @@
                     <p>Try the demo</p>
                   </a>
                 </div>
-                <!-- <div class="techStack">
-                  <span>JavaScript</span>
-                  <span>Tailwind</span>
-                  <span>React</span>
-                </div> -->
               </div>
+            </div>
+          </div>
+          <a href="#about" class="view-projects-link-new" id="view-roadmap-link">
+          <span>View my roadmap</span>
+          <img src="public/pointer.png" alt="Pointer" class="pointer-img" />
+        </a>
+        </div>
+      </section>
+      <section class="aboutContainer" id="about">
+        <div class="rmtext">
+          <p>
+            Thank you for viewing my profile! I am an intermediate in the world of software developement and</br> I enjoyed and deeply appreciated every milestone, and opportunity to learn.
+          </p>
+          <div class="roadmap-wrapper">
+            <div class="roadmap-horizon"></div>
+            
+            <div class="roadmap-points">
+
+              <div class="roadmap-point up">
+                <div class="company-logo-circle">
+                  <img src="public/MLogo.webp" alt="Company 1">
+                </div>
+                <div class="vertical-stem"></div>
+                <div class="stem-end-dot"></div>
+                <div class="roadmap-info">
+                  <div class="roadmap-number">01</div>
+                  <div class="roadmap-text">
+                    Meshed Group<br>
+                    [JULY 2024]<br>
+                    I was part of the team that developed the Meshed360 app.<br>
+                  </div>
+                </div>
+              </div>
+
+              <div class="roadmap-point down">
+                <div class="company-logo-circle">
+                  <img src="public/CLLogo.png" alt="Company 2">
+                </div>
+                <div class="vertical-stem"></div>
+                <div class="stem-end-dot"></div>
+                <div class="roadmap-info">
+                  <div class="roadmap-number">02</div>
+                  <div class="roadmap-text">
+                    Capital Land<br>
+                    [APRIL 2025]<br>
+                    Developed the Captrac internal ERP system used for property management.
+                  </div>
+                </div>
+              </div>
+
+              <div class="roadmap-point up">
+                <div class="company-logo-circle">
+                  <img src="public/BBLogo.png" alt="Company 3">
+                </div>
+                <div class="vertical-stem"></div>
+                <div class="stem-end-dot"></div>
+                <div class="roadmap-info">
+                  <div class="roadmap-number">03</div>
+                  <div class="roadmap-text">
+                    Blackbee Software<br>
+                    [NOVEMBER 2025]<br>
+                    Worked on the "W8" cluster of microservices, and developed the Italy 2026 Paralympics doctor survey app.
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
       </section>
-      <section class="aboutContainer" id="about">
-        <h2>About</h2>
-        <div class="aboutContainerDiv">
-          <p>
-            I'm a passionate and highly technical web developer with a strong
-            drive for creating seamless, user-friendly web experiences.
-            Proficient in HTML, CSS, JavaScript, and cutting-edge frameworks
-            like React, Node, I excel at developing responsive and
-            high-performance web applications. My relentless work ethic and
-            enthusiasm for coding fuel my ability to solve complex problems and
-            deliver exceptional results. Eager to embrace new challenges and
-            continuously improve my skills, I am committed to contributing to
-            forward-thinking projects and driving technological innovation.
-          </p>
-        </div>
-        <div class="stack">
-          <h3>Tech Stack</h3>
-          <div>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>React</li>
-              <li>Node</li>
-              <li>TanStack</li>
-              <li>Express</li>
-              <li>PostgreSQL</li>
-              <li>Stripe</li>
-              <li>MongoDB</li>
-              <li>Tailwind CSS</li>
-              <li>C#</li> 
-              <li>ASP.NET</li> 
-              <li>RESTful API's</li>
-              <li>MVC</li>
-            </ul>
-          </div>
-        </div>
-        </div>
-      </section>
-      
-      <section class="contactInfo" id="contactInfo">
-        <p class="contact">Contact Me</p>
-        <div class="contactlinks">
-          <p><i class="fa-solid fa-phone"></i><span class="contactMe">083 465 5459</span></p>
-          <p> <i class="fa-solid fa-envelope"></i><span class="contactMe">pretoriuspauld@gmail.com</span></p>           
-        </div>
-        <a href="#heading" class="back">Back to top</a>
-      </section>
     </main>
 
     <script>
-document.getElementById('view-projects-link').addEventListener('click', function(e) {
-  e.preventDefault();
-  const target = document.getElementById('project');
-  if (!target) return;
+      // Function to create smooth scroll
+      function smoothScrollTo(targetId) {
+        const target = document.getElementById(targetId);
+        if (!target) return;
 
-  const duration = 50;
-  const start = window.scrollY;
-  const end = target.getBoundingClientRect().top + window.scrollY;
-  const startTime = performance.now();
+        const duration = 50;
+        const start = window.scrollY;
+        const end = target.getBoundingClientRect().top + window.scrollY;
+        const startTime = performance.now();
 
-  function scrollStep(currentTime) {
-    const elapsed = currentTime - startTime;
-    const progress = Math.min(elapsed / duration, 1);
-    window.scrollTo(0, start + (end - start) * progress);
-    if (progress < 1) {
-      requestAnimationFrame(scrollStep);
-    }
-  }
-  requestAnimationFrame(scrollStep);
-});
-</script>
+        function scrollStep(currentTime) {
+          const elapsed = currentTime - startTime;
+          const progress = Math.min(elapsed / duration, 1);
+          window.scrollTo(0, start + (end - start) * progress);
+          if (progress < 1) {
+            requestAnimationFrame(scrollStep);
+          }
+        }
+        requestAnimationFrame(scrollStep);
+      }
+
+      document.getElementById('view-projects-link').addEventListener('click', function(e) {
+        e.preventDefault();
+        smoothScrollTo('project');
+      });
+
+      document.getElementById('view-roadmap-link').addEventListener('click', function(e) {
+        e.preventDefault();
+        smoothScrollTo('about');
+      });
+
+      document.querySelectorAll('.nav-links a:not(.cv-nav-link)').forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href').substring(1); 
+          smoothScrollTo(targetId);
+        });
+      });
+
+      document.getElementById('cv-download-link').addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const link = document.createElement('a');
+        link.href = 'public/Paul-Daniel-CV.pdf';
+        link.download = 'Paul-Daniel-Pretorius-CV.pdf';
+        link.target = '_blank'; 
+
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      });
+    </script>
 
   </body>
 </html>
